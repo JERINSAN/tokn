@@ -1,0 +1,207 @@
+@font-face {
+  font-family: BostonBold;
+  src: url(../font/BostonBold.otf);
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../font/Poppins-SemiBold.ttf);
+}
+
+.Header-wrap {
+  display: grid;
+  grid-template-columns: 63% 37%;
+  position: fixed;
+  top: 0;            
+  left: 0;           
+  width: 100%;       
+  z-index: 1000;    
+  transition: all 0.3s ease; /* smooth change */
+}
+
+.logo-part {
+  margin: 71px 108px;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  height: 61px;
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  color: #3B2A9A;
+  font-family: BostonBold;
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+
+.qr-part {
+  display: grid;
+  justify-content: right;
+  padding-right: 30px;
+  transition: all 0.3s ease;
+}
+
+.qr-inner {
+  background-color: #D9D9D938;
+  width: 260px;
+  padding: 30px 0px 30px 30px;
+  margin: 43px;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.qr-image {
+  height: 92px;
+  transition: all 0.3s ease;
+}
+
+.tip-button {
+  border: #CED5EF solid 2px;
+  height: 35px;
+  width: 125.48px;
+  border-radius: 8px;
+  font-family: Poppins-SemiBold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+
+@media  (min-width: 1024px){
+    /* Your scrolled states remain unchanged */
+.logo-part.scrolled {
+  margin: 20px 108px;
+}
+
+.logo.scrolled {
+  height: 41px;
+}
+
+.logo-text.scrolled {
+  font-size: 20px;
+}
+
+.qr-inner.scrolled {
+  width: 160px;
+  padding: 10px 0px 10px 10px;
+  margin: 20px 43px;
+}
+
+.qr-image.scrolled {
+  height: 52px;
+}
+
+.tip-button.scrolled {
+  width: 85.48px;
+  font-size: 12px;
+}
+}
+
+/*  Tablets (portrait & landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+.logo-part {
+  margin: 35px 54px;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  height: 30px;
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  color: #3B2A9A;
+  font-family: BostonBold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.qr-part {
+  display: grid;
+  justify-content: right;
+  padding-right: 0px;
+  transition: all 0.3s ease;
+}
+
+.qr-inner {
+  background-color: #D9D9D938;
+  width: 160px;
+  padding: 15px 0px 15px 15px;
+  margin: 35px 54px;
+  transition: all 0.3s ease;
+}
+
+.qr-image {
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.tip-button {
+  border: #CED5EF solid 2px;
+  height: 35px;
+  width: 75.48px;
+  border-radius: 8px;
+  font-family: Poppins-SemiBold;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+  
+}
+
+/* Mobile (phones) */
+@media (max-width: 600px) {
+  
+    .logo-part {
+  margin: 15px 14px;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  height: 25px;
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  color: #3B2A9A;
+  font-family: BostonBold;
+  font-size: 11px;
+  transition: all 0.3s ease;
+}
+
+.qr-part {
+  display: grid;
+  justify-content: right;
+  padding-right: 0px;
+  transition: all 0.3s ease;
+}
+
+.qr-inner {
+  background-color: #D9D9D938;
+  width: 100px;
+  padding: 10px 0px 10px 15px;
+  margin: 15px 14px;
+  transition: all 0.3s ease;
+}
+
+.qr-image {
+  height: 30px;
+  transition: all 0.3s ease;
+}
+
+.tip-button {
+  border: #CED5EF solid 2px;
+  height: 35px;
+  width: 50.48px;
+  border-radius: 8px;
+  font-family: Poppins-SemiBold;
+  font-size: 8px;
+  transition: all 0.3s ease;
+}
+
+}
