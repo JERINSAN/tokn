@@ -16,6 +16,7 @@
   width: 100%;       
   z-index: 1000;    
   transition: all 0.3s ease; /* smooth change */
+  background-color: transparent;
 }
 
 .logo-part {
@@ -73,6 +74,10 @@
 
 @media  (min-width: 1024px){
     /* Your scrolled states remain unchanged */
+.Header-wrap.scrolled{
+  background-color: #fff;
+}
+
 .logo-part.scrolled {
   margin: 20px 108px;
 }
