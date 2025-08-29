@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+.how-its-work-cont{
+    background-color: #D9D9D938;
+    margin: 100px 80px;
+    border-radius: 14px;
+    padding: 0px 50px 0px 100px;
+}
+
+.how-its-work-titel{
+    font-family: Poppins-Bold;
+    font-size: 48px;
+}
+
+.how-its-work-content{
+    font-family: Poppins-Medium;
+    font-size: 20px;
+    color: #666666;
+    margin-right: 50px;
+}
+
+.how-its-work-video{
+    border-radius: 40px;
+    max-width: 600px;
+}
+
+/* For video */
+@media (min-width: 1200px) and (max-width: 1320px) {
+.how-its-work-video{
+    border-radius: 40px;
+    max-width: 450px;
+}
+}
+
+@media  (max-width: 1200px) and (min-width: 1024px){
+.how-its-work-video{
+    margin-top: 70px;
+}
+}
+
+/*  Tablets (portrait & landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+.how-its-work-cont{
+    margin: 100px 0px;
+    padding: 0px 30px 0px 30px;
+}
+
+.how-its-work-titel{
+    font-family: Poppins-Bold;
+    font-size: 35px;
+}
+
+.how-its-work-content{
+    font-size: 17px;
+    margin-right: 0px;
+}
+
+.how-its-work-video{
+    margin-top: 40px;
+}
+
+}
+
+/* Mobile (phones) */
+@media (max-width: 600px) {
+    .how-its-work-cont{
+    margin: 50px 0px;
+    padding: 0px 20px 0px 20px;
+}
+
+.how-its-work-titel{
+    font-family: Poppins-Bold;
+    font-size:  24px;
+}
+
+.how-its-work-content{
+    font-size: 15px;
+    margin-right: 0px;
+}
+
+.how-its-work-video{
+    border-radius: 20px;
+    width: 100%;
+}
+}

@@ -15,7 +15,6 @@
     justify-content: center;
     align-items: center;
     height: 95vh;
-    width: 99vw;
     overflow: hidden;
 }
 
@@ -144,4 +143,35 @@
     border-radius: 50%;
     font-size: 20px;
     
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+.testimonial-next{
+    display: none;
+}
+
+.testimonial-previous{
+   display: none;
+    
+}
+.testimonial-cont{
+  font-size: 17px;
+}
+
+}
+
+@media  (max-width: 600px) {
+.testimonial-next{
+    display: none;
+}
+
+.testimonial-previous{
+   display: none;
+    
+}
+
+.testimonial-cont{
+  font-size: 15px;
+}
+
 }

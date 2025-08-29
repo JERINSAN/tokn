@@ -108,7 +108,9 @@
 
 /*  Tablets (portrait & landscape) */
 @media (min-width: 601px) and (max-width: 1024px) {
-
+.Header-wrap.scrolled{
+  background-color: #fff;
+}
 .logo-part {
   margin: 35px 54px;
   transition: all 0.3s ease;
@@ -161,7 +163,9 @@
 
 /* Mobile (phones) */
 @media (max-width: 600px) {
-  
+  .Header-wrap.scrolled{
+  background-color: #fff;
+}
     .logo-part {
   margin: 15px 14px;
   transition: all 0.3s ease;

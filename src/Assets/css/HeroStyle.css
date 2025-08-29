@@ -24,7 +24,7 @@
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(40px);       
-  transform: scale(1.1);    
+      
   z-index: 0;
   overflow:visible; 
 }
@@ -83,7 +83,7 @@
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(40px);       
-  transform: scale(1.1);    
+      
   z-index: 0;
 }
 
@@ -98,12 +98,12 @@
 }
 
 .hero-part-1-text-1{
-    font-size: 24px;
+    font-size: 35px;
     font-family: Poppins-Bold;
 }
 
 .hero-part-1-text-2{
-    font-size: 15px;
+    font-size: 17px;
     font-family: Poppins-Bold;
 }
 
@@ -144,7 +144,7 @@
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(40px);       
-  transform: scale(1.1);    
+      
   z-index: 0;
   overflow:visible; 
 }
@@ -207,7 +207,7 @@
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(40px);       
-  transform: scale(1.1);    
+      
   z-index: 0;
 }
 

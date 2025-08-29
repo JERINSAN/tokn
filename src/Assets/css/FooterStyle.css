@@ -1,0 +1,87 @@
+@font-face {
+  font-family: BostonRegular;
+  src: url(../font/BostonRegular.otf);
+}
+
+.footer-wrap{
+    display: grid;
+    grid-template-columns: 25% 15% 15% 17% 10% 18%;
+    padding: 100px 0px;
+}
+
+.footer-part{
+    display:grid;
+    padding-left: 20px;
+}
+
+.footer-part-1{
+    display:grid;
+    justify-content: center;
+}
+
+.footer-logo{
+    height: 53px;
+}
+
+.footer-logo-text{
+    font-size: 12px;
+    font-family: BostonRegular;
+    color: #0A2982;
+    font-weight: 700;
+}
+
+.footer-social-link{
+    display: flex;
+}
+
+.footer-link-title{
+    text-decoration: none;
+    color: #0A2982;
+    font-size: 19px;
+    font-weight:500;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: #0A2982;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .footer-wrap{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+   
+}
+.footer-link-title{
+    margin-top: 50px;
+}
+
+}
+
+
+@media (max-width: 600px) and (min-width: 400px){
+
+.footer-wrap{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer-link-title{
+    margin-top: 50px;
+}
+}
+
+@media (max-width: 400px) {
+
+.footer-wrap{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.footer-link-title{
+    margin-top: 50px;
+}
+}
+

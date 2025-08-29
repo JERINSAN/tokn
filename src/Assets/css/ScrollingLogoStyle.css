@@ -1,0 +1,27 @@
+.scrolling-logo-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fff;
+  margin-bottom: 100px;
+}
+
+.scrolling-track {
+  display: inline-flex;
+  animation: scroll-left 10s linear infinite;
+}
+
+.scrolling-track img {
+  height: 258px;
+  margin: 0 30px;
+  object-fit: contain;
+}
+
+/* Animation: move track fully left, then reset */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* shift by half, because we duplicated logos */
+  }
+}
