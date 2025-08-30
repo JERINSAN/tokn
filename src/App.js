@@ -9,7 +9,7 @@ import Feature from "./Components/Feature";
 import Merchant from "./Components/Merchant";
 import FAQ from "./Components/FAQ";
 import BannerSlider from "./Components/Banner";
-
+import OnePlatform from "./Components/OnePlatform";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
     <Merchant/>
     <ScrollingLogo/>
     <Creators/>
+    <OnePlatform/>
     <Feature/>
     <Testimonial/>
     <FAQ/>

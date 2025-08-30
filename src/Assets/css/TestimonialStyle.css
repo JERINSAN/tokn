@@ -18,7 +18,12 @@
     overflow: hidden;
 }
 
-
+.testimonial-heading{
+  font-size: 42px;
+  font-family: Poppins-Bold;
+  text-align: center;
+  margin: 100px 0px;
+}
 
 .testimonial-cont {
   position: absolute;
@@ -158,6 +163,13 @@
   font-size: 17px;
 }
 
+.testimonial-heading{
+  font-size: 35px;
+  font-family: Poppins-Bold;
+  text-align: center;
+  margin: 100px 0px;
+}
+
 }
 
 @media  (max-width: 600px) {
@@ -172,6 +184,13 @@
 
 .testimonial-cont{
   font-size: 15px;
+}
+
+.testimonial-heading{
+  font-size: 24px;
+  font-family: Poppins-Bold;
+  text-align: center;
+  margin: 100px 0px;
 }
 
 }

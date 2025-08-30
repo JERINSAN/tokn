@@ -18,7 +18,7 @@ export default function BannerSlider() {
     return () => clearInterval(interval);
   }, []);
 
-  return (<>
+  return (<><div className="Banner-wrap">
     <div className="slider">
       <div
         className="slider-track"
@@ -41,6 +41,6 @@ export default function BannerSlider() {
             onClick={() => setCurrent(index)}
           />
         ))}
-      </div></>
+      </div> </div></>
   );
 }

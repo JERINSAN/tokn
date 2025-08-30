@@ -73,7 +73,7 @@ const Testimonial = () => {
   };
 
   return (
-    <>
+    <> <div className='testimonial-heading'>Testimonials</div>
       <div
         className="testimonial-warp"
         onMouseEnter={stopAutoSlide} 

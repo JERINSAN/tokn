@@ -1,3 +1,6 @@
+.Banner-wrap{
+overflow: hidden;  
+}
 .slider {
   position: relative;
   max-height: 555px;
