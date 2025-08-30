@@ -5,17 +5,25 @@ import HowItsWork from "./Components/HowItsWork";
 import ScrollingLogo from "./Components/ScrollingLogo";
 import Footer from "./Components/Footer";
 import Creators from "./Components/Creators";
-import Futures from "./Components/Futures";
+import Feature from "./Components/Feature";
+import Merchant from "./Components/Merchant";
+import FAQ from "./Components/FAQ";
+import BannerSlider from "./Components/Banner";
+
+
 function App() {
   return (
     <>
     <Header/>
     <HeroSection/>
     <HowItsWork/>
+    <BannerSlider/>
+    <Merchant/>
     <ScrollingLogo/>
     <Creators/>
-    <Futures/>
+    <Feature/>
     <Testimonial/>
+    <FAQ/>
     <Footer/>
     </>
   );

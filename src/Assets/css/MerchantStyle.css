@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+.merchant-wrap{
+    background-color: #D9D9D938;
+    margin: 100px 80px;
+    border-radius: 14px;
+    padding: 0px 50px 0px 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+      grid-gap: 30px;
+}
+
+.merchant-titel{
+    font-family: Poppins-Bold;
+    font-size: 48px;
+    margin-top: 50px;
+}
+
+.merchant-content{
+    font-family: Poppins-Medium;
+    font-size: 20px;
+    color: #666666;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.merchant-btn{
+    border: none;
+    font-size: 20px;
+    font-family: Poppins-Medium;
+    color: #fff;
+    background-color: #000484;
+    height: 49px;
+    width: 242px;
+    border-radius: 8px;
+}
+
+/*  Tablets (portrait & landscape) */
+@media (min-width: 800px) and (max-width: 1024px) {
+.merchant-wrap{
+    margin: 100px 0px;
+    padding: 0px 30px 0px 30px;
+}
+
+.merchant-titel{
+    font-family: Poppins-Bold;
+    font-size: 35px;
+}
+
+.merchant-content{
+    font-size: 17px;
+    margin-right: 0px;
+}
+
+.merchant-video{
+    margin-top: 40px;
+}
+
+}
+
+/* Mobile (phones) */
+@media (max-width: 800px) and (min-width:600px) {
+    .merchant-wrap{
+    margin: 50px 0px;
+    padding: 0px 20px 0px 20px;
+    grid-template-columns: 100%;
+}
+.merchant-part-2{
+    order: -1;
+}
+.merchant-titel{
+    font-family: Poppins-Bold;
+    font-size:  35px;
+}
+
+.merchant-content{
+    font-size: 17px;
+    margin-right: 0px;
+}
+
+.merchant-video{
+    border-radius: 20px;
+    width: 100%;
+}
+}
+
+@media (max-width: 600px){
+.merchant-wrap{
+    margin: 50px 0px;
+    padding: 0px 20px 0px 20px;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+}
+.merchant-part-2{
+    order: -1;
+}
+.merchant-titel{
+    font-family: Poppins-Bold;
+    font-size:  24px;
+}
+
+.merchant-content{
+    font-size: 15px;
+    margin-right: 0px;
+}
+
+.merchant-video{
+    border-radius: 20px;
+    width: 100%;
+}
+}

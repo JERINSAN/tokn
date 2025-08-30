@@ -14,8 +14,18 @@
   overflow:visible; 
 }
 
+.background-gradient{
+    position: absolute;
+    z-index: -10;
+    width: 50vw;
+}
+
+.gradient{
+    filter: blur(40px);
+}
+
 /* Blurred background */
-.hero-part-1::before {
+/* .hero-part-1::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -27,7 +37,7 @@
       
   z-index: 0;
   overflow:visible; 
-}
+} */
 
 .hero-part-1 > * {
   position: relative;
@@ -74,7 +84,7 @@
 }
 
 
-.hero-part-1::before {
+/* .hero-part-1::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -85,14 +95,18 @@
   filter: blur(40px);       
       
   z-index: 0;
-}
+} */
 
 
 .hero-part-1 > * {
   position: relative;
   z-index: 1;
 }
-
+.background-gradient{
+    position: absolute;
+    z-index: -10;
+    width: 50vw;
+}
 .hero-part-1-inner{
     margin: 200px 0px 0px 113px;
 }
@@ -135,7 +149,7 @@
 }
 
 
-.hero-part-1::before {
+/* .hero-part-1::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -147,9 +161,13 @@
       
   z-index: 0;
   overflow:visible; 
+} */
+
+.background-gradient{
+    position: absolute;
+    z-index: -10;
+    width: 80vw;
 }
-
-
 .hero-part-1 > * {
   position: relative;
   z-index: 1;
@@ -198,7 +216,7 @@
 }
 
 
-.hero-part-1::before {
+/* .hero-part-1::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -209,8 +227,12 @@
   filter: blur(40px);       
       
   z-index: 0;
+} */
+.background-gradient{
+    position: absolute;
+    z-index: -10;
+    width: 80vw;
 }
-
 
 .hero-part-1 > * {
   position: relative;
