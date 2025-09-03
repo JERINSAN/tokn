@@ -25,3 +25,21 @@
     transform: translateX(-50%); /* shift by half, because we duplicated logos */
   }
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+.scrolling-track img {
+  height: 178px;
+}
+
+}
+
+
+@media  (max-width: 600px) {
+
+.scrolling-track img {
+  height: 100px;
+   margin: 0 10px;
+}
+
+}

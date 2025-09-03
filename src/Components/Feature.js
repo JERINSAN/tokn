@@ -1,9 +1,18 @@
 import '../Assets/css/FeatureStyle.css';
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from 'react';
 
 const Feature = () =>{
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // animation duration in ms
+          once: true, // whether animation should happen only once
+        });
+      }, []);
     return(<>
 
-        <div className='feature-wrap shadow'>
+        <div className='feature-wrap shadow' data-aos="fade-up"> 
 
             <div className='feature-wrap-part-1'>
                 <div style={{position:"relative"}} className='column-3 feature-wrap-inner'>

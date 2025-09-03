@@ -1,10 +1,19 @@
 import '../Assets/css/MerchantStyle.css';
 import Lottie from "lottie-react";
 import MerchantAnimation from '../Assets/animation/Merchant.json';
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from 'react';
 
 const Merchant = () =>{
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // animation duration in ms
+          once: true, // whether animation should happen only once
+        });
+      }, []);
 return(<>
-    <div className='merchant-wrap'>
+    <div className='merchant-wrap' data-aos="fade-up">
         <div  className='merchant-part-1'> 
             <Lottie animationData={MerchantAnimation} loop={true}  style={{height:"395px"}}/>
         </div>

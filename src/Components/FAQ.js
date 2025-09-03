@@ -1,10 +1,19 @@
 import '../Assets/css/FAQStyle.css';
 import { useState } from 'react';
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from 'react';
 
 const FAQ = () =>{
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // animation duration in ms
+          once: true, // whether animation should happen only once
+        });
+      }, []);
     const [key,setKey] = useState(1);
     return(<>
-        <div className='faq-wrap'>
+        <div className='faq-wrap' data-aos="fade-up">
             <div className='faq-part-1'>
                 Frequently asked questions
             </div>
