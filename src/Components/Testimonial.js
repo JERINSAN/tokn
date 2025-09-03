@@ -4,16 +4,39 @@ import testimonialimg from '../Assets/img/testimonial-img.png';
 import { useState, useEffect, useRef } from 'react';
 
 const Testimonial = () => {
+  const TestimonialData =[
+    {"id":1,
+     "name":"Waitress at Café",
+     "position":"Waitress at Café ",
+     "content" : '"I never thought a simple ‘thank you’ could feel this rewarding.One customer scanned the Tokn QR after I served them their coffee, and in seconds, I received a tip directly in my account. It wasn’t just about the money—it was about feeling valued for my work. Tokn has made every smile and every bit of effort I put in truly appreciated." That did a great job!!',
+     "image"   :"/Testimonial/1.png",
+    },
+     {"id":2,
+     "name":"Waitress at Café",
+     "position":"Waitress at Café ",
+     "content" : '"I never thought a simple ‘thank you’ could feel this rewarding.One customer scanned the Tokn QR after I served them their coffee, and in seconds, I received a tip directly in my account. It wasn’t just about the money—it was about feeling valued for my work. Tokn has made every smile and every bit of effort I put in truly appreciated." That did a great job!!',
+     "image"   :"/Testimonial/1.png",
+    },
+     {"id":3,
+     "name":"Waitress at Café",
+     "position":"Waitress at Café ",
+     "content" : '"I never thought a simple ‘thank you’ could feel this rewarding.One customer scanned the Tokn QR after I served them their coffee, and in seconds, I received a tip directly in my account. It wasn’t just about the money—it was about feeling valued for my work. Tokn has made every smile and every bit of effort I put in truly appreciated." That did a great job!!',
+     "image"   :"/Testimonial/1.png",
+    },
+  ];
   const [testimonial, setTestimonial] = useState(1);
+  const [key , setKey] =useState(0);
   const intervalRef = useRef(null);
   const startXRef = useRef(null); // store drag start position
 
   const Next = () => {
     setTestimonial((prev) => (prev === 3 ? 1 : prev + 1));
+    setKey((prev) => (prev === TestimonialData.length-1 ? 0 : prev + 1));
   };
 
   const Previous = () => {
     setTestimonial((prev) => (prev === 1 ? 3 : prev - 1));
+    setKey((prev) => (prev === 0 ? TestimonialData.length-1 : prev - 1));
   };
 
   // ✅ Function to start auto-slide
@@ -105,13 +128,8 @@ const Testimonial = () => {
           <div className="testimonial-part-1">
             <img src={quotation} alt="Quotation" className="quotation-img" />
           </div>
-          <div className="testimonial-part-2">
-            "I never thought a simple ‘thank you’ could feel this rewarding.
-            One customer scanned the Tokn QR after I served them their coffee,
-            and in seconds, I received a tip directly in my account. It wasn’t
-            just about the money—it was about feeling valued for my work. Tokn
-            has made every smile and every bit of effort I put in truly
-            appreciated." That did a great job!!
+          <div className="testimonial-part-2">{TestimonialData[key].content}
+           
           </div>
           <div className="testimonial-part-3">
             <img
@@ -149,12 +167,7 @@ const Testimonial = () => {
             <img src={quotation} alt="Quotation" className="quotation-img" />
           </div>
           <div className="testimonial-part-2">
-            "I never thought a simple ‘thank you’ could feel this rewarding.
-            One customer scanned the Tokn QR after I served them their coffee,
-            and in seconds, I received a tip directly in my account. It wasn’t
-            just about the money—it was about feeling valued for my work. Tokn
-            has made every smile and every bit of effort I put in truly
-            appreciated." That did a great job!!
+            {TestimonialData[key].content}
           </div>
           <div className="testimonial-part-3">
             <img
@@ -192,12 +205,7 @@ const Testimonial = () => {
             <img src={quotation} alt="Quotation" className="quotation-img" />
           </div>
           <div className="testimonial-part-2">
-            "I never thought a simple ‘thank you’ could feel this rewarding.
-            One customer scanned the Tokn QR after I served them their coffee,
-            and in seconds, I received a tip directly in my account. It wasn’t
-            just about the money—it was about feeling valued for my work. Tokn
-            has made every smile and every bit of effort I put in truly
-            appreciated." That did a great job!!
+           {TestimonialData[key].content}
           </div>
           <div className="testimonial-part-3 ">
             <img

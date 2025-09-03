@@ -268,6 +268,8 @@
     font-family: Inter_Bold;
     font-size: 12px;
     cursor: pointer; 
+    margin-left: -20px;
+    margin-right: 10px;
 }
 .active{
  border-bottom: 2px solid #3b2b98;

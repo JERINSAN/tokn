@@ -44,7 +44,7 @@
 }
 
 .qr-inner {
-  background-color: #D9D9D938;
+  background-color: #F0EEFF;
   width: 260px;
   padding: 30px 0px 30px 30px;
   margin: 43px;
@@ -62,13 +62,42 @@
 }
 
 .tip-button {
-  border: #CED5EF solid 2px;
+  position: relative; /* needed for ::before */
   height: 35px;
   width: 125.48px;
   border-radius: 8px;
   font-family: Poppins-SemiBold;
   font-size: 16px;
+  margin-left: 5px;
   transition: all 0.3s ease;
+  color: #fff;
+  z-index: 1; /* keep text above ::before */
+  background: transparent; /* button background handled by ::before */
+  border: none; /* remove default border */
+}
+
+.tip-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 2px; /* border thickness */
+  background: linear-gradient(to bottom left, #A799FF, #09558E);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1; /* put behind text */
+}
+
+.tip-button::after {
+  content: "";
+  position: absolute;
+  inset: 2px; /* inner fill */
+  border-radius: 6px;
+  background: linear-gradient(to right, #07558C, #764EEF); /* inner gradient */
+  z-index: -1;
 }
 
 
@@ -149,13 +178,12 @@
 }
 
 .tip-button {
-  border: #CED5EF solid 2px;
   height: 35px;
   width: 75.48px;
-  border-radius: 8px;
   font-family: Poppins-SemiBold;
   font-size: 12px;
   transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
   
@@ -204,7 +232,6 @@
 }
 
 .tip-button {
-  border: #CED5EF solid 2px;
   height: 35px;
   width: 50.48px;
   border-radius: 8px;
