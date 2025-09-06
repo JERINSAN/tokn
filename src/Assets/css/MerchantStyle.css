@@ -37,9 +37,9 @@
     font-size: 20px;
     font-family: Poppins-Medium;
     color: #fff;
-    background-color: #000484;
     height: 49px;
     width: 242px;
+    background: linear-gradient(to right, #07558C, #764EEF); /* inner gradient */
     border-radius: 8px;
 }
 

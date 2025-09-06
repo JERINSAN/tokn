@@ -1,6 +1,6 @@
 import '../Assets/css/HeaderStyle.css';
 import logo from '../Assets/img/logo.png';
-import qr from '../Assets/img/qr.png';
+// import qr from '../Assets/img/qr.png';
 import { useState ,useEffect } from 'react';
 
 const Header = () =>{
@@ -33,9 +33,8 @@ const Header = () =>{
 
       <div className="qr-part">
         <div className={`qr-inner ${scrolled ? "scrolled" : ""}`}>
-          <img src={qr} className={`qr-image ${scrolled ? "scrolled" : ""}`} alt="QR-Image" />
           <button className={`tip-button ${scrolled ? "scrolled" : ""}`}>
-            Tip Now
+            Click to Tokn
           </button>
         </div>
       </div>
