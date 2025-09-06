@@ -1,5 +1,5 @@
 import '../Assets/css/HowitsworkStyle_Creators.css';
-import CreatorsVideo from'../Assets/videos/tokn.mp4';
+import CreatorsVideo from'../Assets/videos/Creators.mp4';
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from 'react';
