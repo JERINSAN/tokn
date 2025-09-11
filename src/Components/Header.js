@@ -33,7 +33,7 @@ const Header = () =>{
 
       <div className="qr-part">
         <div className={`qr-inner ${scrolled ? "scrolled" : ""}`}>
-          <button className={`tip-button ${scrolled ? "scrolled" : ""}`}>
+          <button className={`tip-button shadow ${scrolled ? "scrolled" : ""}`}>
             Click to Tokn
           </button>
         </div>

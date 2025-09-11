@@ -8,6 +8,11 @@
     src: url(../font/Poppins-Medium.ttf);
 }
 
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../font/Poppins-SemiBold.ttf);
+}
+
 .merchant-wrap{
     background-color: #D9D9D938;
     margin: 100px 80px;
@@ -34,11 +39,10 @@
 
 .merchant-btn{
     border: none;
-    font-size: 20px;
-    font-family: Poppins-Medium;
+    font-size: 13px;
+    font-family: Poppins-SemiBold;
     color: #fff;
-    height: 49px;
-    width: 242px;
+    padding: 10px 20px;
     background: linear-gradient(to right, #07558C, #764EEF); /* inner gradient */
     border-radius: 8px;
 }

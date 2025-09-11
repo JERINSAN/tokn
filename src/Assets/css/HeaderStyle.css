@@ -61,7 +61,6 @@
 
 .tip-button {
   position: relative; /* needed for ::before */
-  height: 35px;
   border-radius: 8px;
   font-family: Poppins-SemiBold;
   font-size: 16px;
@@ -71,31 +70,10 @@
   z-index: 1; /* keep text above ::before */
   background: transparent; /* button background handled by ::before */
   border: none; /* remove default border */
+   background: linear-gradient(to right, #07558C, #764EEF); /* inner gradient */
+  padding: 10px 20px;
 }
 
-.tip-button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 8px;
-  padding: 2px; /* border thickness */
-  background: linear-gradient(to bottom left, #A799FF, #09558E);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
-  z-index: -1; /* put behind text */
-}
-
-.tip-button::after {
-  content: "";
-  position: absolute;
-  inset: 1.12px; /* inner fill */
-  border-radius: 8px;
-  background: linear-gradient(to right, #07558C, #764EEF); /* inner gradient */
-  z-index: -1;
-}
 
 
 @media  (min-width: 1024px){
@@ -177,11 +155,7 @@
 }
 
 .tip-button {
-  height: 35px;
-  font-family: Poppins-SemiBold;
   font-size: 12px;
-  transition: all 0.3s ease;
-  border-radius: 2px;
 }
 
   
@@ -189,6 +163,7 @@
 
 /* Mobile (phones) */
 @media (max-width: 600px) {
+  
   .Header-wrap.scrolled{
   background-color: #fff;
 }
@@ -212,14 +187,15 @@
 .qr-part {
   display: grid;
   justify-content: right;
+  align-items: center;
   padding-right: 0px;
   transition: all 0.3s ease;
 }
 
 .qr-inner {
-  
-  width: 100px;
-  height: 60%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
   padding: 10px 10px 10px 10px;
   margin: 15px 14px;
   transition: all 0.3s ease;
@@ -231,11 +207,11 @@
 }
 
 .tip-button {
-  height: 30px;
   border-radius: 8px;
   font-family: Poppins-SemiBold;
-  font-size: 8px;
+  font-size: 10px;
   transition: all 0.3s ease;
+  padding: 10px 10px;
 }
 
 }
