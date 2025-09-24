@@ -12,7 +12,7 @@ const ReceiveTokn = () =>{
         });
       }, []);
 return(<>
-    <div className='send-tokn-wrap' data-aos="fade-up" style={{backgroundColor:"transparent"}}>
+    <div className='send-tokn-wrap py-4' data-aos="fade-up" style={{backgroundColor:"#D9D9D938"}}>
         
         <div className='send-tokn-part-2'>
             <div className='send-tokn-titel'>
