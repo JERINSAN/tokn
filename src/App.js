@@ -5,6 +5,8 @@ import HowItsWork from "./Components/HowItsWork";
 import ScrollingLogo from "./Components/ScrollingLogo";
 import Footer from "./Components/Footer";
 import Creators from "./Components/Creators";
+import SendTokn from "./Components/SendTokn";
+import ReceiveTokn from "./Components/ReceiveTokn";
 import Feature from "./Components/Feature";
 import Merchant from "./Components/Merchant";
 import FAQ from "./Components/FAQ";
@@ -21,6 +23,8 @@ function App() {
     <Merchant/>
     <ScrollingLogo/>
     <Creators/>
+    <SendTokn/>
+    <ReceiveTokn/>
     <OnePlatform/>
     <Feature/>
     <Testimonial/>
