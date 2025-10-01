@@ -27,7 +27,7 @@ return(<>
                 </div>
         </div>
         <div  className='send-tokn-part-1'> 
-            <img src={ReceiveToknImg} alt='ReceiveToknImg'/>
+            <img src={ReceiveToknImg} alt='ReceiveToknImg' className='ReceiveToknImg'/>
         </div>
     </div>
 

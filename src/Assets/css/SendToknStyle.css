@@ -165,3 +165,9 @@
     width: 100%;
 }
 }
+
+@media (max-width: 345px){
+    .ReceiveToknImg{
+            width: 300px;;
+    }
+}
