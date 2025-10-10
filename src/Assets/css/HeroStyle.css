@@ -24,20 +24,7 @@
     filter: blur(40px);
 }
 
-/* Blurred background */
-/* .hero-part-1::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url(../animation/gradient.gif);
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(40px);       
-      
-  z-index: 0;
-  overflow:visible; 
-} */
+
 
 .hero-part-1 > * {
   position: relative;
@@ -87,18 +74,6 @@
 }
 
 
-/* .hero-part-1::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url(../animation/gradient.gif);
-  background-size: 95% 95%;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(40px);       
-      
-  z-index: 0;
-} */
 
 
 .hero-part-1 > * {
@@ -158,19 +133,7 @@
 }
 
 
-/* .hero-part-1::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url(../animation/gradient.gif);
-  background-size: 95% 95%;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(40px);       
-      
-  z-index: 0;
-  overflow:visible; 
-} */
+
 
 .background-gradient{
     position: absolute;
@@ -228,18 +191,6 @@
 }
 
 
-/* .hero-part-1::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url(../animation/gradient.gif);
-  background-size: 95% 95%;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(40px);       
-      
-  z-index: 0;
-} */
 .background-gradient{
     position: absolute;
     z-index: -10;
