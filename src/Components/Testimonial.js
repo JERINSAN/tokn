@@ -6,22 +6,34 @@ import { useState, useEffect, useRef } from 'react';
 const Testimonial = () => {
   const TestimonialData =[
     {"id":1,
-     "name":"Waitress at Café",
+     "name":"Priya Sharma",
      "position":"Waitress at Café ",
      "content" : '"I never thought a simple ‘thank you’ could feel this rewarding.One customer scanned the Tokn QR after I served them their coffee, and in seconds, I received a tip directly in my account. It wasn’t just about the money—it was about feeling valued for my work. Tokn has made every smile and every bit of effort I put in truly appreciated." That did a great job!!',
      "image"   :"/Testimonial/1.png",
     },
      {"id":2,
-     "name":"Waitress at Café",
-     "position":"Waitress at Café ",
-     "content" : '"I never thought a simple ‘thank you’ could feel this rewarding.One customer scanned the Tokn QR after I served them their coffee, and in seconds, I received a tip directly in my account. It wasn’t just about the money—it was about feeling valued for my work. Tokn has made every smile and every bit of effort I put in truly appreciated." That did a great job!!',
-     "image"   :"/Testimonial/1.png",
+     "name":"Rahul Verma",
+     "position":"Salon Hair Stylist",
+     "content" : '"In our line of work, most appreciation comes in words, but rarely in a way that stays with you. Last week, a client used Tokn to tip me right after their haircut. That small gesture felt big—it told me my skills matter. Tokn makes it so easy for clients to show gratitude, and for us to receive it instantly."',
+     "image"   :"/Testimonial/2.png",
     },
      {"id":3,
-     "name":"Waitress at Café",
-     "position":"Waitress at Café ",
-     "content" : '"I never thought a simple ‘thank you’ could feel this rewarding.One customer scanned the Tokn QR after I served them their coffee, and in seconds, I received a tip directly in my account. It wasn’t just about the money—it was about feeling valued for my work. Tokn has made every smile and every bit of effort I put in truly appreciated." That did a great job!!',
-     "image"   :"/Testimonial/1.png",
+     "name":"Meena Singh ",
+     "position":"Hotel Housekeeping Staff",
+     "content" : '"As a housekeeping staff member, tips are a rare surprise. With Tokn, I got a tip from a guest who had already checked out! They scanned my QR code at the reception and I received the payment directly in my UPI account. It made my day. Tokn turns appreciation into something tangible, and I’m truly thankful for that."',
+     "image"   :"/Testimonial/3.png",
+    },
+    {"id":4,
+     "name":"Arjun Mehta ",
+     "position":"Coffee Lover & Regular Customer",
+     "content" : '"I believe small acts of kindness go a long way. When I discovered Tokn, it became my favorite way to appreciate the people who make my day better—like my local café staff. It’s quick, cashless, and feels good knowing my tip reaches them directly. For me, it’s a small change that makes a big difference."',
+     "image"   :"/Testimonial/4.png",
+    },
+    {"id":5,
+     "name":"Ananya Roy",
+     "position":"Frequent Traveller",
+     "content" : '"I travel a lot, and I’ve met so many hardworking service professionals who go the extra mile. With Tokn, I can instantly tip them, even if I don’t have cash on me. It’s my way of saying ‘thank you’ and giving back to society—one QR scan at a time. Every good deed deserves appreciation, and Tokn makes it effortless."',
+     "image"   :"/Testimonial/5.png",
     },
   ];
   const [testimonial, setTestimonial] = useState(1);
@@ -133,13 +145,13 @@ const Testimonial = () => {
           </div>
           <div className="testimonial-part-3">
             <img
-              src={testimonialimg}
+              src={TestimonialData[key].image}
               className="testimonial-img"
               alt="Testimonial Image"
             />
             <div className="testimonial-text">
-              <span className="testimonial-text-1"> Priya Sharma </span> <br />
-              <span className="testimonial-text-2"> Waitress at Café </span>
+              <span className="testimonial-text-1"> {TestimonialData[key].name} </span> <br />
+              <span className="testimonial-text-2"> {TestimonialData[key].position} </span>
             </div>
           </div>
         </div>
@@ -171,13 +183,13 @@ const Testimonial = () => {
           </div>
           <div className="testimonial-part-3">
             <img
-              src={testimonialimg}
+              src={TestimonialData[key].image}
               className="testimonial-img"
               alt="Testimonial Image"
             />
             <div className="testimonial-text">
-              <span className="testimonial-text-1"> Priya Sharma </span> <br />
-              <span className="testimonial-text-2"> Waitress at Café </span>
+              <span className="testimonial-text-1"> {TestimonialData[key].name} </span> <br />
+              <span className="testimonial-text-2"> {TestimonialData[key].position} </span>
             </div>
           </div>
         </div>
@@ -209,13 +221,13 @@ const Testimonial = () => {
           </div>
           <div className="testimonial-part-3 ">
             <img
-              src={testimonialimg}
+              src={TestimonialData[key].image}
               className="testimonial-img"
               alt="Testimonial Image"
             />
             <div className="testimonial-text">
-              <span className="testimonial-text-1"> Priya Sharma </span> <br />
-              <span className="testimonial-text-2"> Waitress at Café </span>
+              <span className="testimonial-text-1"> {TestimonialData[key].name} </span> <br />
+              <span className="testimonial-text-2"> {TestimonialData[key].position} </span>
             </div>
           </div>
         </div>
